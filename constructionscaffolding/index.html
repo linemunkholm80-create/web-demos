@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Construction Scaffolding Ltd | Scaffolding in North East England & North Yorkshire</title>
+<meta name="description" content="Construction Scaffolding Ltd - 30+ years of scaffolding erection and dismantling across the North East and North Yorkshire. Free site surveys. Call 01287 772 968.">
+<style>
+:root{
+  --dark:#20262d;
+  --mid:#3d4c5c;
+  --accent:#f28c1e;
+  --accent-text:#1d2228;
+  --highlight:#ffc06b;
+  --bg:#f6f7f8;
+  --paper:#ffffff;
+  --ink:#242a31;
+  --muted:#5d6773;
+  --soft:#fdeedd;
+  --line:#e4e8ec;
+  --radius:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+a{color:var(--mid)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:50;background:var(--paper);box-shadow:0 1px 8px rgba(0,0,0,.09)}
+.topbar{background:var(--dark);color:rgba(255,255,255,.72);font-size:.85rem;padding:6px 0}
+.topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.topbar a{color:#fff;text-decoration:none;font-weight:600}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;max-width:1080px;margin:0 auto}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none}
+.logo-mark{width:44px;height:44px;border-radius:10px;background:linear-gradient(150deg,var(--mid),var(--dark));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:1.15rem}
+.logo-name{color:var(--dark);font-weight:800;font-size:1.2rem;line-height:1.15}
+.logo-tag{color:var(--muted);font-size:.72rem;letter-spacing:.4px;text-transform:uppercase}
+nav.menu{display:flex;gap:22px}
+nav.menu a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.95rem}
+nav.menu a:hover{color:var(--accent)}
+.call-btn{background:var(--accent);color:var(--accent-text);font-weight:800;padding:10px 18px;border-radius:999px;text-decoration:none;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.22)}
+@media(max-width:860px){nav.menu{display:none}}
+.hero{background:linear-gradient(160deg,var(--dark) 0%,var(--mid) 100%);color:#fff;padding:72px 0 96px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:70px;background:var(--bg);clip-path:ellipse(75% 100% at 50% 100%)}
+.hero .wrap{position:relative;z-index:1}
+.badge-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
+.pill{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.24);padding:6px 14px;border-radius:999px;font-size:.82rem;font-weight:600}
+.pill strong{color:var(--highlight)}
+.hero h1{font-size:clamp(2rem,5vw,3rem);line-height:1.15;font-weight:800;max-width:680px}
+.hero p.lead{margin:18px 0 30px;font-size:1.15rem;color:rgba(255,255,255,.82);max-width:580px}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.btn-primary{background:var(--accent);color:var(--accent-text);font-weight:800;font-size:1.05rem;padding:14px 26px;border-radius:999px;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.3)}
+.btn-ghost{border:2px solid rgba(255,255,255,.55);color:#fff;font-weight:700;padding:12px 24px;border-radius:999px;text-decoration:none}
+.trust{margin-top:-30px;position:relative;z-index:2}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.trust-card{background:var(--paper);border-radius:var(--radius);padding:18px 16px;box-shadow:0 6px 20px rgba(0,0,0,.09);text-align:center}
+.trust-card .big{font-weight:800;color:var(--dark);font-size:1.02rem}
+.trust-card .small{color:var(--muted);font-size:.82rem;margin-top:2px}
+@media(max-width:820px){.trust .wrap{grid-template-columns:repeat(2,1fr)}}
+section{padding:64px 0}
+.kicker{color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:1.5px;font-size:.8rem}
+h2.title{color:var(--dark);font-size:clamp(1.5rem,3.5vw,2.1rem);font-weight:800;margin:6px 0 14px}
+p.sub{color:var(--muted);max-width:660px;margin-bottom:34px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--paper);border-radius:var(--radius);padding:26px 22px;box-shadow:0 3px 14px rgba(0,0,0,.06);border-top:4px solid var(--accent)}
+.card .icon{width:46px;height:46px;border-radius:12px;background:var(--soft);display:flex;align-items:center;justify-content:center;margin-bottom:14px;font-size:1.3rem}
+.card h3{color:var(--dark);font-size:1.06rem;margin-bottom:6px}
+.card p{color:var(--muted);font-size:.92rem}
+@media(max-width:820px){.grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.grid{grid-template-columns:1fr}}
+.prices{background:var(--paper)}
+.price-table{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.price-card{border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.price-card h3{color:var(--dark);font-size:1rem;margin-bottom:12px;display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.price-card h3 .amt{color:var(--accent);font-size:1.3rem;font-weight:800;white-space:nowrap}
+.price-card ul{list-style:none}
+.price-card li{display:flex;justify-content:space-between;padding:8px 0;border-top:1px dashed var(--line);font-size:.92rem;color:var(--ink);gap:12px}
+.price-card li span:last-child{font-weight:700;color:var(--dark);white-space:nowrap}
+.price-note{margin-top:18px;color:var(--muted);font-size:.85rem}
+@media(max-width:680px){.price-table{grid-template-columns:1fr}}
+.quote{background:linear-gradient(160deg,var(--dark),var(--mid));color:#fff;border-radius:var(--radius)}
+.quote-inner{padding:44px 40px;max-width:820px;margin:0 auto}
+.quote blockquote{font-size:1.12rem;line-height:1.7;font-style:italic;color:rgba(255,255,255,.9)}
+.quote .who{margin-top:16px;font-weight:700;color:var(--highlight)}
+.stars{color:var(--highlight);letter-spacing:3px;font-size:1.1rem;margin-bottom:14px}
+.contact .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:32px}
+.contact-card{background:var(--paper);border-radius:var(--radius);padding:30px;box-shadow:0 3px 14px rgba(0,0,0,.06)}
+.contact-card h3{color:var(--dark);font-size:1.5rem;margin-bottom:16px}
+.c-line{display:flex;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line);font-size:.98rem}
+.c-line:last-child{border-bottom:none}
+.c-line .lbl{color:var(--muted);min-width:86px;font-size:.85rem;text-transform:uppercase;letter-spacing:.5px}
+.c-line a{font-weight:700;text-decoration:none;color:var(--dark)}
+.map-ph{background:var(--soft);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;color:var(--mid);font-weight:700;min-height:260px;text-align:center;padding:20px}
+@media(max-width:820px){.contact .wrap{grid-template-columns:1fr}}
+footer{background:var(--dark);color:rgba(255,255,255,.55);padding:34px 0;font-size:.86rem}
+footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+footer a{color:rgba(255,255,255,.85);text-decoration:none}
+.sticky-call{display:none}
+@media(max-width:680px){
+  .sticky-call{display:flex;position:fixed;bottom:14px;left:14px;right:14px;z-index:60;background:var(--accent);color:var(--accent-text);font-weight:800;font-size:1.05rem;padding:15px;border-radius:999px;justify-content:center;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.35)}
+  footer{padding-bottom:90px}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="topbar">
+    <div class="wrap">
+      <span>2 Church View, Saltburn-by-the-Sea, Cleveland TS12 1GY</span>
+      <span>Mon to Fri 9am to 6pm &nbsp;|&nbsp; <a href='tel:01287772968'>01287 772 968</a></span>
+    </div>
+  </div>
+  <div class="nav">
+    <a class="logo" href="#top">
+      <div class="logo-mark">CS</div>
+      <div>
+        <div class="logo-name">Construction Scaffolding Ltd</div>
+        <div class="logo-tag">North East & North Yorkshire</div>
+      </div>
+    </a>
+    <nav class="menu">
+      <a href="#services">Services</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="call-btn" href="tel:01287772968">Call 01287 772 968</a>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <div class="badge-row"><span class="pill"><strong>30+ years'</strong> experience</span><span class="pill">Fully insured</span><span class="pill">Free site surveys</span></div>
+    <h1>Reliable scaffolding for the North East & North Yorkshire</h1>
+    <p class="lead">Commercial, residential and industrial scaffolding, erected and dismantled by a fully trained team. Available seven days a week, with free site surveys.</p>
+    <div class="cta-row">
+      <a class="btn-primary" href="tel:01287772968">Get a free site survey</a>
+      <a class="btn-ghost" href="mailto:info@constructionscaffoldingltd.co.uk">Email us</a>
+    </div>
+  </div>
+</div>
+
+<div class="trust">
+  <div class="wrap"><div class="trust-card"><div class="big">30+ years</div><div class="small">erecting and dismantling scaffolding</div></div><div class="trust-card"><div class="big">Fully insured</div><div class="small">for commercial and domestic work</div></div><div class="trust-card"><div class="big">7 days a week</div><div class="small">our services are available all week</div></div><div class="trust-card"><div class="big">Free site survey</div><div class="small">before any work begins</div></div></div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="kicker">What we do</div>
+    <h2 class="title">Scaffolding services</h2>
+    <p class="sub">A complete package: we supply the stock, erect it, and dismantle it when the job is done. Domestic and commercial projects across the North East and North Yorkshire.</p>
+    <div class="grid"><div class="card"><div class="icon">🏗️</div><h3>Scaffolding erection</h3><p>Safe, compliant scaffolding erected by our fully trained and experienced team.</p></div><div class="card"><div class="icon">📦</div><h3>Equipment supply</h3><p>Scaffolding stock, boards and planks supplied as part of the complete package.</p></div><div class="card"><div class="icon">🪜</div><h3>Work platforms</h3><p>Standard, narrow and double scaffold towers plus access platforms for any project.</p></div><div class="card"><div class="icon">🔧</div><h3>Dismantling</h3><p>Careful dismantling and removal when the work is finished, with no mess left behind.</p></div><div class="card"><div class="icon">⏱️</div><h3>Extended hire</h3><p>Extended hire available on erected jobs, so your project never has to wait.</p></div><div class="card"><div class="icon">🏠</div><h3>Domestic & commercial</h3><p>From a single house to industrial construction projects, no job is too big or small.</p></div></div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="quote">
+      <div class="quote-inner">
+        <div class="stars">★★★★★</div>
+        <blockquote>"Whether you need scaffolding for your home or business, you can rely on us for top-quality work that is done to your satisfaction."</blockquote>
+        <div class="who">Construction Scaffolding Ltd, est. over 30 years</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="contact-card">
+      <div class="kicker">Get in touch</div>
+      <h3>Get a free site survey</h3>
+      <div class="c-line"><span class="lbl">Phone</span><a href='tel:01287772968'>01287 772 968</a></div><div class="c-line"><span class="lbl">Mobile</span><a href='tel:07967015377'>07967 015 377</a></div><div class="c-line"><span class="lbl">Email</span><a href='mailto:info@constructionscaffoldingltd.co.uk'>info@constructionscaffoldingltd.co.uk</a></div><div class="c-line"><span class="lbl">Address</span><span>2 Church View, Saltburn-by-the-Sea, Cleveland TS12 1GY</span></div><div class="c-line"><span class="lbl">Hours</span><span>Monday to Friday, 9am to 6pm</span></div>
+    </div>
+    <div class="map-ph">Google Maps kort<br>indsættes her på den rigtige side</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Construction Scaffolding Ltd · Company no. 03772299 · Fully insured</span>
+    <span><a href="#top">Back to top</a></span>
+  </div>
+</footer>
+
+<a class="sticky-call" href="tel:01287772968">📞 Call for a free survey</a>
+</body>
+</html>
