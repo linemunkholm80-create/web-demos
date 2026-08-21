@@ -16,7 +16,7 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
-body{font-family:var(--body);color:var(--ink);background:var(--bg);line-height:1.65;font-size:16.5px}
+body{font-family:var(--body);color:var(--ink);background:var(--bg);line-height:1.65;font-size:16.5px;overflow-x:hidden}
 img{max-width:100%;display:block}
 a{color:inherit}
 .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
@@ -46,6 +46,7 @@ nav.menu a{text-decoration:none;font-weight:500;font-size:.95rem;color:var(--ink
 nav.menu a:hover{opacity:1;color:var(--accent)}
 .nav .btn{padding:11px 20px;font-size:.92rem}
 @media(max-width:900px){nav.menu{display:none}}
+@media(max-width:680px){.nav .btn{display:none}.logo-name{font-size:1.1rem}.logo-tag{font-size:.66rem}.hero h1{font-size:clamp(2.2rem,9vw,3rem)}.topbar .wrap{flex-direction:column;gap:2px}}
 /* hero */
 .hero{position:relative;color:#fff;background:linear-gradient(150deg,var(--dark) 0%,var(--mid) 100%);overflow:hidden;min-height:min(74vh,720px);display:flex;align-items:center;padding:96px 0 110px}
 .hero.has-img{background:linear-gradient(160deg,rgba(8,9,12,.86),rgba(8,9,12,.45)),url() center/cover no-repeat}
