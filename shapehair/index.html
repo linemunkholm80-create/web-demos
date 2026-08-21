@@ -5,207 +5,187 @@
 <meta name="robots" content="noindex">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shape Hairdressing | Southsea's Colour Salon for 30 Years | 023 9282 6119</title>
-<meta name="description" content="Shape Hairdressing - celebrating 30 years as Southsea&#x27;s leading colour salon. Colour correction, cutting and styling with L&#x27;Oreal Professionnel, Redken, GHD and Kerastase. Call 023 9282 6119.">
+<meta name="description" content="Shape Hairdressing - celebrating 30 years as Southsea's leading colour salon. Colour correction, cutting and styling with L'Oreal Professionnel, Redken, GHD and Kerastase. Call 023 9282 6119.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --dark:#1a1a1c;
-  --mid:#333336;
-  --accent:#cbb27c;
-  --accent-text:#1c1a15;
-  --highlight:#e7d7ae;
-  --bg:#f8f7f5;
-  --paper:#ffffff;
-  --ink:#232324;
-  --muted:#6d6c68;
-  --soft:#f1ebdd;
-  --line:#e6e4e0;
-  --radius:6px;
+  --dark:#1a1a1c;--mid:#333336;--accent:#cbb27c;--accent-text:#1c1a15;--highlight:#e7d7ae;
+  --bg:#f8f7f5;--paper:#ffffff;--ink:#232324;--muted:#6d6c68;--soft:#f1ebdd;--line:#e6e4e0;
+  --radius:6px;--display:'Cormorant Garamond', serif;--body:'Jost', sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
-h1,h2.title,.logo-name,.quote blockquote{font-family:Georgia, 'Times New Roman', serif}
-a{color:var(--mid)}
-.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
-header{position:sticky;top:0;z-index:50;background:var(--paper);box-shadow:0 1px 8px rgba(0,0,0,.09)}
-.topbar{background:var(--dark);color:rgba(255,255,255,.72);font-size:.85rem;padding:6px 0}
-.topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+body{font-family:var(--body);color:var(--ink);background:var(--bg);line-height:1.65;font-size:16.5px}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+h1,h2,.display{font-family:var(--display);font-weight:600;letter-spacing:-0.01em;line-height:1.05}
+.kicker{font-size:.74rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--accent)}
+.btn{display:inline-flex;align-items:center;gap:10px;font-weight:600;text-decoration:none;border-radius:999px;padding:14px 24px;transition:transform .2s,box-shadow .2s,background .2s;font-size:.98rem}
+.btn svg{width:18px;height:18px;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}.btn:hover svg{transform:translateX(3px)}
+.btn-accent{background:var(--accent);color:var(--accent-text);box-shadow:0 10px 30px -12px var(--accent)}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.45);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.btn-dark{background:var(--dark);color:#fff}
+/* topbar + header */
+.topbar{background:var(--dark);color:rgba(255,255,255,.7);font-size:.74rem;letter-spacing:.06em;padding:8px 0}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .topbar a{color:#fff;text-decoration:none;font-weight:600}
-.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;max-width:1080px;margin:0 auto}
-.logo{display:flex;align-items:center;gap:11px;text-decoration:none}
-.logo-mark{width:44px;height:44px;border-radius:10px;background:linear-gradient(150deg,var(--mid),var(--dark));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:1.15rem}
-.logo-img{height:46px;width:auto;max-width:170px;object-fit:contain;display:block}
-.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.gallery-grid img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius);box-shadow:0 3px 12px rgba(0,0,0,.08)}
-@media(max-width:640px){.gallery-grid{grid-template-columns:repeat(2,1fr)}}
-.logo-name{color:var(--dark);font-weight:800;font-size:1.2rem;line-height:1.15}
-.logo-tag{color:var(--muted);font-size:.72rem;letter-spacing:.4px;text-transform:uppercase}
-nav.menu{display:flex;gap:22px}
-nav.menu a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.95rem}
-nav.menu a:hover{color:var(--accent)}
-.call-btn{background:var(--accent);color:var(--accent-text);font-weight:800;padding:10px 18px;border-radius:999px;text-decoration:none;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.22)}
-@media(max-width:860px){nav.menu{display:none}}
-.hero{background:linear-gradient(160deg,var(--dark) 0%,var(--mid) 100%);color:#fff;padding:72px 0 96px;position:relative;overflow:hidden}
-.hero::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:70px;background:var(--bg);clip-path:ellipse(75% 100% at 50% 100%)}
-.hero .wrap{position:relative;z-index:1}
-.badge-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
-.pill{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.24);padding:6px 14px;border-radius:999px;font-size:.82rem;font-weight:600}
-.pill strong{color:var(--highlight)}
-.hero h1{font-size:clamp(2rem,5vw,3rem);line-height:1.15;font-weight:800;max-width:680px}
-.hero p.lead{margin:18px 0 30px;font-size:1.15rem;color:rgba(255,255,255,.82);max-width:580px}
+header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.86);backdrop-filter:saturate(160%) blur(12px);-webkit-backdrop-filter:saturate(160%) blur(12px);border-bottom:1px solid var(--line);transition:box-shadow .3s}
+header.scrolled{box-shadow:0 8px 30px -18px rgba(0,0,0,.35)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo-mark{width:44px;height:44px;border-radius:12px;background:var(--dark);color:#fff;display:grid;place-items:center;font-family:var(--display);font-weight:600;font-size:1.1rem}
+.logo-img{height:44px;width:auto;max-width:180px;object-fit:contain}
+.logo-name{font-family:var(--display);font-weight:600;font-size:1.3rem;color:var(--dark);line-height:1.1}
+.logo-tag{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+nav.menu{display:flex;gap:28px}
+nav.menu a{text-decoration:none;font-weight:500;font-size:.95rem;color:var(--ink);opacity:.85}
+nav.menu a:hover{opacity:1;color:var(--accent)}
+.nav .btn{padding:11px 20px;font-size:.92rem}
+@media(max-width:900px){nav.menu{display:none}}
+/* hero */
+.hero{position:relative;color:#fff;background:linear-gradient(150deg,var(--dark) 0%,var(--mid) 100%);overflow:hidden;min-height:min(74vh,720px);display:flex;align-items:center;padding:96px 0 110px}
+.hero.has-img{background:linear-gradient(160deg,rgba(8,9,12,.86),rgba(8,9,12,.45)),url(assets/p2.jpg) center/cover no-repeat}
+.hero .wm{position:absolute;right:-2vw;bottom:-8vw;font-family:var(--display);font-weight:700;font-size:34vw;line-height:1;color:#fff;opacity:.05;pointer-events:none;user-select:none}
+.hero .wrap{position:relative;z-index:1;max-width:1120px}
+.hero .eyebrow{display:flex;align-items:center;gap:14px;margin-bottom:26px;color:var(--highlight)}
+.hero .eyebrow::before{content:"";width:36px;height:1.5px;background:var(--highlight)}
+.hero h1{font-size:clamp(2.6rem,6.2vw,4.8rem);max-width:15ch;margin-bottom:24px}
+.hero .lead{font-size:clamp(1.05rem,1.6vw,1.25rem);color:rgba(255,255,255,.82);max-width:56ch;margin-bottom:36px;line-height:1.6}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:42px;font-size:.88rem;color:rgba(255,255,255,.78)}
+.hero .meta span{display:flex;align-items:center;gap:8px}
+.hero .meta span::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.hero .meta strong{color:#fff;font-weight:600}
 .cta-row{display:flex;gap:14px;flex-wrap:wrap}
-.btn-primary{background:var(--accent);color:var(--accent-text);font-weight:800;font-size:1.05rem;padding:14px 26px;border-radius:999px;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.3)}
-.btn-ghost{border:2px solid rgba(255,255,255,.55);color:#fff;font-weight:700;padding:12px 24px;border-radius:999px;text-decoration:none}
-.trust{margin-top:-30px;position:relative;z-index:2}
-.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.trust-card{background:var(--paper);border-radius:var(--radius);padding:18px 16px;box-shadow:0 6px 20px rgba(0,0,0,.09);text-align:center}
-.trust-card .big{font-weight:800;color:var(--dark);font-size:1.02rem}
-.trust-card .small{color:var(--muted);font-size:.82rem;margin-top:2px}
-@media(max-width:820px){.trust .wrap{grid-template-columns:repeat(2,1fr)}}
-section{padding:64px 0}
-.kicker{color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:1.5px;font-size:.8rem}
-h2.title{color:var(--dark);font-size:clamp(1.5rem,3.5vw,2.1rem);font-weight:800;margin:6px 0 14px}
-p.sub{color:var(--muted);max-width:660px;margin-bottom:34px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{background:var(--paper);border-radius:var(--radius);padding:26px 22px;box-shadow:0 3px 14px rgba(0,0,0,.06);border-top:4px solid var(--accent)}
-.card .icon{width:46px;height:46px;border-radius:12px;background:var(--soft);display:flex;align-items:center;justify-content:center;margin-bottom:14px;font-size:1.3rem}
-.card h3{color:var(--dark);font-size:1.06rem;margin-bottom:6px}
-.card p{color:var(--muted);font-size:.92rem}
-@media(max-width:820px){.grid{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.grid{grid-template-columns:1fr}}
-.prices{background:var(--paper)}
-.price-table{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.price-card{border:1px solid var(--line);border-radius:var(--radius);padding:22px}
-.price-card h3{color:var(--dark);font-size:1rem;margin-bottom:12px;display:flex;justify-content:space-between;align-items:baseline;gap:10px}
-.price-card h3 .amt{color:var(--accent);font-size:1.3rem;font-weight:800;white-space:nowrap}
-.price-card ul{list-style:none}
-.price-card li{display:flex;justify-content:space-between;padding:8px 0;border-top:1px dashed var(--line);font-size:.92rem;color:var(--ink);gap:12px}
-.price-card li span:last-child{font-weight:700;color:var(--dark);white-space:nowrap}
-.price-note{margin-top:18px;color:var(--muted);font-size:.85rem}
-@media(max-width:680px){.price-table{grid-template-columns:1fr}}
-.quote{background:linear-gradient(160deg,var(--dark),var(--mid));color:#fff;border-radius:var(--radius)}
-.quote-inner{padding:44px 40px;max-width:820px;margin:0 auto}
-.quote blockquote{font-size:1.12rem;line-height:1.7;font-style:italic;color:rgba(255,255,255,.9)}
-.quote .who{margin-top:16px;font-weight:700;color:var(--highlight)}
-.stars{color:var(--highlight);letter-spacing:3px;font-size:1.1rem;margin-bottom:14px}
-.contact .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:32px}
-.contact-card{background:var(--paper);border-radius:var(--radius);padding:30px;box-shadow:0 3px 14px rgba(0,0,0,.06)}
-.contact-card h3{color:var(--dark);font-size:1.5rem;margin-bottom:16px}
-.c-line{display:flex;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line);font-size:.98rem}
-.c-line:last-child{border-bottom:none}
-.c-line .lbl{color:var(--muted);min-width:86px;font-size:.85rem;text-transform:uppercase;letter-spacing:.5px}
-.c-line a{font-weight:700;text-decoration:none;color:var(--dark)}
-.map-ph{background:var(--soft);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;color:var(--mid);font-weight:700;min-height:260px;text-align:center;padding:20px}
-@media(max-width:820px){.contact .wrap{grid-template-columns:1fr}}
-footer{background:var(--dark);color:rgba(255,255,255,.55);padding:34px 0;font-size:.86rem}
-footer .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
-footer a{color:rgba(255,255,255,.85);text-decoration:none}
+/* stats */
+.stats{margin-top:-56px;position:relative;z-index:2}
+.stats .grid{display:grid;grid-template-columns:repeat(4,1fr);background:var(--paper);border:1px solid var(--line);border-radius:calc(var(--radius) + 6px);box-shadow:0 30px 60px -40px rgba(0,0,0,.35);overflow:hidden}
+.stat{padding:28px 26px;border-left:1px solid var(--line)}
+.stat:first-child{border-left:0}
+.stat .n{font-family:var(--display);font-weight:600;font-size:2rem;color:var(--dark);line-height:1;letter-spacing:-.02em}
+.stat .l{font-size:.8rem;color:var(--muted);margin-top:8px;letter-spacing:.02em}
+@media(max-width:820px){.stats .grid{grid-template-columns:1fr 1fr}.stat:nth-child(3){border-left:0}.stat{border-top:1px solid var(--line)}.stat:nth-child(-n+2){border-top:0}}
+/* sections */
+section{padding:96px 0}
+.sec-head{display:grid;grid-template-columns:1.1fr 1fr;gap:32px;align-items:end;margin-bottom:48px}
+.sec-head h2{font-size:clamp(1.9rem,3.6vw,2.8rem);color:var(--dark);margin-top:12px}
+.sec-head p{color:var(--muted);font-size:1.02rem;max-width:48ch}
+@media(max-width:820px){.sec-head{grid-template-columns:1fr;gap:12px}}
+/* services */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:30px 26px;transition:transform .25s,border-color .25s,box-shadow .25s}
+.card:hover{transform:translateY(-4px);border-color:var(--accent);box-shadow:0 24px 40px -30px rgba(0,0,0,.35)}
+.card .ic{width:50px;height:50px;border-radius:14px;background:var(--soft);color:var(--accent);display:grid;place-items:center;margin-bottom:22px}
+.card .ic svg{width:24px;height:24px}
+.card h3{font-family:var(--display);font-weight:600;font-size:1.22rem;color:var(--dark);margin-bottom:8px;letter-spacing:-.01em}
+.card p{color:var(--muted);font-size:.95rem}
+@media(max-width:900px){.cards{grid-template-columns:1fr 1fr}}
+@media(max-width:580px){.cards{grid-template-columns:1fr}}
+/* prices */
+.prices{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.price-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.price{border:1px solid var(--line);border-radius:var(--radius);padding:28px;background:var(--bg)}
+.price h3{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-family:var(--display);font-weight:600;font-size:1.15rem;color:var(--dark);margin-bottom:14px}
+.price .amt{color:var(--accent);font-size:1.7rem;white-space:nowrap}
+.price ul{list-style:none}
+.price li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-top:1px dashed var(--line);font-size:.95rem}
+.price li span:last-child{font-weight:600;color:var(--dark);white-space:nowrap}
+.price-note{margin-top:18px;color:var(--muted);font-size:.86rem}
+@media(max-width:680px){.price-grid{grid-template-columns:1fr}}
+/* gallery */
+.mosaic{display:grid;gap:14px;grid-template-columns:repeat(3,1fr)}
+.mosaic img{width:100%;height:100%;object-fit:cover;border-radius:var(--radius);aspect-ratio:4/3;transition:transform .5s}
+.mosaic a{overflow:hidden;border-radius:var(--radius);display:block}
+.mosaic a:hover img{transform:scale(1.04)}
+.mosaic.n3 a:first-child{grid-row:span 2}.mosaic.n3 a:first-child img{aspect-ratio:auto;height:100%}
+.mosaic.n3{grid-template-columns:1.4fr 1fr;grid-auto-rows:240px}
+.mosaic.n2{grid-template-columns:1fr 1fr}.mosaic.n4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:700px){.mosaic,.mosaic.n3,.mosaic.n4{grid-template-columns:1fr 1fr;grid-auto-rows:auto}.mosaic.n3 a:first-child{grid-row:auto;grid-column:span 2}.mosaic.n3 a:first-child img{aspect-ratio:16/9}}
+/* quote */
+.quote{background:var(--soft)}
+.quote .inner{max-width:860px;margin:0 auto;text-align:center;position:relative;padding:0 24px}
+.quote .mark{font-family:var(--display);font-size:7rem;line-height:.6;color:var(--accent);opacity:.55;margin-bottom:18px}
+.quote blockquote{font-family:var(--display);font-style:italic;font-weight:500;font-size:clamp(1.35rem,2.6vw,2rem);line-height:1.35;color:var(--dark)}
+.quote .who{margin-top:26px;font-size:.8rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+/* contact */
+.contact{background:var(--dark);color:#fff}
+.contact .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:start}
+.contact h2{font-size:clamp(1.9rem,3.6vw,2.8rem);color:#fff;margin:12px 0 28px}
+.contact .kicker{color:var(--highlight)}
+.c-line{display:grid;grid-template-columns:110px 1fr;gap:16px;padding:14px 0;border-top:1px solid rgba(255,255,255,.14);font-size:.98rem}
+.c-line:last-child{border-bottom:1px solid rgba(255,255,255,.14)}
+.c-line .lbl{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.55);padding-top:3px}
+.c-line a{color:#fff;text-decoration:none;font-weight:600}
+.c-line a:hover{color:var(--highlight)}
+.panel{background:var(--paper);color:var(--ink);border-radius:calc(var(--radius) + 6px);padding:36px;box-shadow:0 40px 80px -40px rgba(0,0,0,.6)}
+.panel .kicker{color:var(--accent)}
+.panel .big{font-family:var(--display);font-weight:600;font-size:clamp(1.6rem,3vw,2.3rem);color:var(--dark);margin:10px 0 6px;letter-spacing:-.02em}
+.panel p{color:var(--muted);margin-bottom:22px}
+@media(max-width:820px){.contact .grid{grid-template-columns:1fr}}
+footer{background:var(--dark);color:rgba(255,255,255,.5);font-size:.82rem;padding:26px 0;border-top:1px solid rgba(255,255,255,.1)}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+footer a{color:rgba(255,255,255,.8);text-decoration:none}
+/* reveal */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+/* mobile sticky */
 .sticky-call{display:none}
-@media(max-width:680px){
-  .sticky-call{display:flex;position:fixed;bottom:14px;left:14px;right:14px;z-index:60;background:var(--accent);color:var(--accent-text);font-weight:800;font-size:1.05rem;padding:15px;border-radius:999px;justify-content:center;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.35)}
-  footer{padding-bottom:90px}
-}
+@media(max-width:680px){.sticky-call{display:flex;position:fixed;left:14px;right:14px;bottom:14px;z-index:70;justify-content:center;gap:10px;background:var(--accent);color:var(--accent-text);font-weight:700;padding:15px;border-radius:999px;text-decoration:none;box-shadow:0 16px 40px -14px rgba(0,0,0,.6)}.sticky-call svg{width:18px;height:18px}footer{padding-bottom:92px}section{padding:72px 0}.hero{padding:72px 0 96px;min-height:0}}
 </style>
 </head>
 <body>
-<header>
-  <div class="topbar">
-    <div class="wrap">
-      <span>15 Clarendon Road, Southsea PO5 2ED</span>
-      <span>Book: <a href='tel:02392826119'>023 9282 6119</a></span>
-    </div>
-  </div>
-  <div class="nav">
-    <a class="logo" href="#top">
-      <div class="logo-mark">S</div>
-      <div>
-        <div class="logo-name">Shape Hairdressing</div>
-        <div class="logo-tag">Southsea's colour salon since 1994</div>
-      </div>
-    </a>
-    <nav class="menu">
-      <a href="#services">Services</a>
-      <a href="#prices">Prices</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <a class="call-btn" href="tel:02392826119">Call 023 9282 6119</a>
-  </div>
-</header>
+<div class="topbar"><div class="wrap"><span>15 Clarendon Road, Southsea PO5 2ED</span><span>Book: <a href='tel:02392826119'>023 9282 6119</a></span></div></div>
+<header id="hdr"><div class="wrap nav">
+  <a class="logo" href="#top"><div class="logo-mark">S</div><div><div class="logo-name">Shape Hairdressing</div><div class="logo-tag">Southsea's colour salon since 1994</div></div></a>
+  <nav class="menu"><a href="#services">Services</a><a href="#prices">Prices</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></nav>
+  <a class="btn btn-accent" href="tel:02392826119">Call 023 9282 6119 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</div></header>
 
-<div class="hero" id="top" style="background:linear-gradient(160deg,rgba(10,10,14,.82),rgba(10,10,14,.55)),url(assets/p2.jpg) center/cover no-repeat">
+<section class="hero has-img" id="top">
+  
   <div class="wrap">
-    <div class="badge-row"><span class="pill"><strong>30 years</strong> as Southsea's colour salon</span><span class="pill">Colour correction specialists</span><span class="pill">L'Oreal · Redken · GHD · Kerastase</span></div>
+    <div class="eyebrow kicker">Southsea's colour salon since 1994</div>
     <h1>Thirty years of getting colour exactly right</h1>
     <p class="lead">Shape is Southsea's leading colour salon - known for colour correction and precision cutting, with award-winning Kerastase ambassadors and partnerships with L'Oreal Professionnel, Redken and GHD.</p>
-    <div class="cta-row">
-      <a class="btn-primary" href="tel:02392826119">Book on 023 9282 6119</a>
-      <a class="btn-ghost" href="mailto:info@shapehairdressing.co.uk">Email us</a>
-    </div>
-  </div>
-</div>
-
-<div class="trust">
-  <div class="wrap"><div class="trust-card"><div class="big">30 years</div><div class="small">as Southsea's leading colour salon</div></div><div class="trust-card"><div class="big">Colour correction</div><div class="small">the fix when colour goes wrong</div></div><div class="trust-card"><div class="big">Kerastase</div><div class="small">award-winning ambassadors on the team</div></div><div class="trust-card"><div class="big">Top partners</div><div class="small">L'Oreal Professionnel, Redken & GHD</div></div></div>
-</div>
-
-<section id="services">
-  <div class="wrap">
-    <div class="kicker">What we do</div>
-    <h2 class="title">In the salon</h2>
-    <p class="sub">Colour is our craft - and every visit starts with a proper consultation.</p>
-    <div class="grid"><div class="card"><div class="icon">🎨</div><h3>Colour</h3><p>Full colour, highlights and balayage by true colour specialists.</p></div><div class="card"><div class="icon">🔧</div><h3>Colour correction</h3><p>Our speciality - when colour has gone wrong, we put it right.</p></div><div class="card"><div class="icon">✂️</div><h3>Cut & finish</h3><p>Wash, cut and blow dry - £51.</p></div><div class="card"><div class="icon">💇‍♂️</div><h3>Men's cutting</h3><p>Precision men's cuts - £32.</p></div><div class="card"><div class="icon">🌊</div><h3>Highlights</h3><p>Full head highlights - £85. Balayage by consultation.</p></div><div class="card"><div class="icon">💫</div><h3>Perms & styling</h3><p>Perms from £70, plus styling for every occasion.</p></div></div>
+    <div class="cta-row"><a class="btn btn-accent" href="tel:02392826119">Book on 023 9282 6119 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn btn-ghost" href="mailto:info@shapehairdressing.co.uk">Email us</a></div>
+    <div class="meta"><span><strong>30 years</strong> as Southsea's colour salon</span><span>Colour correction specialists</span><span>L'Oreal · Redken · GHD · Kerastase</span></div>
   </div>
 </section>
 
-<section class="prices" id="prices">
-  <div class="wrap">
-    <div class="kicker">Transparent pricing</div>
-    <h2 class="title">Clear prices</h2>
-    <p class="sub">You always know what your visit costs before you sit down.</p>
-    <div class="price-table"><div class="price-card"><h3>Cutting <span class="amt">from £32</span></h3><ul><li><span>Wash, cut & blow dry</span><span>£51</span></li><li><span>Men's cutting</span><span>£32</span></li></ul></div><div class="price-card"><h3>Colour <span class="amt">from £70</span></h3><ul><li><span>Full head highlights</span><span>£85</span></li><li><span>Perm</span><span>£70</span></li><li><span>Balayage</span><span>By consultation</span></li></ul></div></div>
-    <p class="price-note">Colour work always starts with a consultation - call to book yours.</p>
-  </div>
-</section>
+<div class="stats"><div class="wrap"><div class="grid reveal"><div class="stat"><div class="n">30 years</div><div class="l">as Southsea's leading colour salon</div></div><div class="stat"><div class="n">Colour correction</div><div class="l">the fix when colour goes wrong</div></div><div class="stat"><div class="n">Kerastase</div><div class="l">award-winning ambassadors on the team</div></div><div class="stat"><div class="n">Top partners</div><div class="l">L'Oreal Professionnel, Redken & GHD</div></div></div></div></div>
 
-<section id="gallery">
-  <div class="wrap">
-    <div class="kicker">The salon</div>
-    <h2 class="title">Inside Shape</h2>
-    <div class="gallery-grid"><img src="assets/p1.jpg" alt="Inside Shape" loading="lazy"><img src="assets/p3.jpg" alt="Inside Shape" loading="lazy"><img src="assets/p4.jpg" alt="Inside Shape" loading="lazy"></div>
-  </div>
-</section>
+<section id="services"><div class="wrap">
+  <div class="sec-head reveal"><div><div class="kicker">What we do</div><h2>In the salon</h2></div><p>Colour is our craft - and every visit starts with a proper consultation.</p></div>
+  <div class="cards"><div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 4 5 14l2 2 10-10-2-2z"/><path d="M7 16c-2 0-3 1-3 4 3 0 4-1 4-3"/><path d="m13 6 5 5"/></svg></div><h3>Colour</h3><p>Full colour, highlights and balayage by true colour specialists.</p></div><div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0 5 5l-8.4 8.4a2.1 2.1 0 0 1-3-3l8.4-8.4a4 4 0 0 0-2 2z"/></svg></div><h3>Colour correction</h3><p>Our speciality - when colour has gone wrong, we put it right.</p></div><div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></svg></div><h3>Cut & finish</h3><p>Wash, cut and blow dry - £51.</p></div><div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></svg></div><h3>Men's cutting</h3><p>Precision men's cuts - £32.</p></div><div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg></div><h3>Highlights</h3><p>Full head highlights - £85. Balayage by consultation.</p></div><div class="card"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></svg></div><h3>Perms & styling</h3><p>Perms from £70, plus styling for every occasion.</p></div></div>
+</div></section>
 
-<section id="reviews">
-  <div class="wrap">
-    <div class="quote">
-      <div class="quote-inner">
-        <div class="stars">★★★★★</div>
-        <blockquote>"Celebrating 30 years as Southsea's leading colour salon - known for colour correction, precision cutting and award-winning Kerastase ambassadors."</blockquote>
-        <div class="who">Shape Hairdressing, Southsea</div>
-      </div>
-    </div>
-  </div>
-</section>
+<section class="prices" id="prices"><div class="wrap">
+  <div class="sec-head reveal"><div><div class="kicker">Transparent pricing</div><h2>Clear prices</h2></div><p>You always know what your visit costs before you sit down.</p></div>
+  <div class="price-grid"><div class="price"><h3>Cutting <span class="amt">from £32</span></h3><ul><li><span>Wash, cut & blow dry</span><span>£51</span></li><li><span>Men's cutting</span><span>£32</span></li></ul></div><div class="price"><h3>Colour <span class="amt">from £70</span></h3><ul><li><span>Full head highlights</span><span>£85</span></li><li><span>Perm</span><span>£70</span></li><li><span>Balayage</span><span>By consultation</span></li></ul></div></div><p class="price-note">Colour work always starts with a consultation - call to book yours.</p>
+</div></section>
 
-<section class="contact" id="contact">
-  <div class="wrap">
-    <div class="contact-card">
-      <div class="kicker">Get in touch</div>
-      <h3>Book your consultation</h3>
-      <div class="c-line"><span class="lbl">Phone</span><a href='tel:02392826119'>023 9282 6119</a></div><div class="c-line"><span class="lbl">Email</span><a href='mailto:info@shapehairdressing.co.uk'>info@shapehairdressing.co.uk</a></div><div class="c-line"><span class="lbl">Address</span><span>15 Clarendon Road, Southsea PO5 2ED</span></div><div class="c-line"><span class="lbl">Hours</span><span>Tue/Wed/Fri 9-6 · Thu/Sat 9-5 · Mon closed</span></div>
-    </div>
-    <div class="map-ph">Google Maps kort<br>indsættes her på den rigtige side</div>
-  </div>
-</section>
+<section id="gallery"><div class="wrap">
+  <div class="sec-head reveal"><div><div class="kicker">The salon</div><h2>Inside Shape</h2></div></div>
+  <div class="mosaic n3"><a href="assets/p1.jpg"><img src="assets/p1.jpg" alt="Inside Shape" loading="lazy"></a><a href="assets/p3.jpg"><img src="assets/p3.jpg" alt="Inside Shape" loading="lazy"></a><a href="assets/p4.jpg"><img src="assets/p4.jpg" alt="Inside Shape" loading="lazy"></a></div>
+</div></section>
 
-<footer>
-  <div class="wrap">
-    <span>© 2026 Shape Southsea Limited · Company no. 04836977 · Est. 1994</span>
-    <span><a href="#top">Back to top</a></span>
-  </div>
-</footer>
+<section class="quote" id="reviews"><div class="wrap"><div class="inner reveal"><div class="mark">“</div><blockquote>Celebrating 30 years as Southsea's leading colour salon - known for colour correction, precision cutting and award-winning Kerastase ambassadors.</blockquote><div class="who">Shape Hairdressing, Southsea</div></div></div></section>
 
-<a class="sticky-call" href="tel:02392826119">📞 Book a consultation</a>
+<section class="contact" id="contact"><div class="wrap"><div class="grid">
+  <div class="reveal"><div class="kicker">Get in touch</div><h2>Book your consultation</h2><div class="c-line"><span class="lbl">Phone</span><span><a href='tel:02392826119'>023 9282 6119</a></span></div><div class="c-line"><span class="lbl">Email</span><span><a href='mailto:info@shapehairdressing.co.uk'>info@shapehairdressing.co.uk</a></span></div><div class="c-line"><span class="lbl">Address</span><span><span>15 Clarendon Road, Southsea PO5 2ED</span></span></div><div class="c-line"><span class="lbl">Hours</span><span><span>Tue/Wed/Fri 9-6 · Thu/Sat 9-5 · Mon closed</span></span></div></div>
+  <div class="panel reveal"><div class="kicker">Ready when you are</div><div class="big">023 9282 6119</div><p>Colour is our craft - and every visit starts with a proper consultation.</p><a class="btn btn-dark" href="tel:02392826119">Call 023 9282 6119 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+</div></div></section>
+
+<footer><div class="wrap"><span>© 2026 Shape Southsea Limited · Company no. 04836977 · Est. 1994</span><a href="#top">Back to top ↑</a></div></footer>
+<a class="sticky-call" href="tel:02392826119"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg> Book a consultation</a>
+<script>
+(function(){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+document.querySelectorAll('.reveal,.card,.price,.mosaic a').forEach(function(el){el.classList.add('reveal');io.observe(el);});
+var h=document.getElementById('hdr');window.addEventListener('scroll',function(){h.classList.toggle('scrolled',window.scrollY>8);},{passive:true});})();
+</script>
 </body>
 </html>
